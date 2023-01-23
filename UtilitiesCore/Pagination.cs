@@ -18,7 +18,7 @@ namespace UtilitiesCore
             }
         }
         public int CurrentPage { get; set; }
-        public IEnumerable<T> Data { get; set; }
+        private IEnumerable<T> Data;
         public IEnumerable<T> PageContent { get; set; }
 
         public Pagination(int pageSize, int currentPage, IEnumerable<T> data)
